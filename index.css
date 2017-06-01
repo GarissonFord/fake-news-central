@@ -1,0 +1,33 @@
+.news-stream
+{
+    padding: 10px;
+}
+
+.stream
+{
+    border: 5px solid #999999;
+    background-color: #8FB299;
+    color: #FFFFFF;
+    display: block;
+}
+
+.col-sm-4
+{
+    padding: 5px;
+}
+
+.selections
+{
+    padding: 10px;
+}
+
+body .container-fluid
+{
+    background-color: #999999;
+}
+
+h1
+{
+    text-align: center;
+    color: #FFFFFF;
+}

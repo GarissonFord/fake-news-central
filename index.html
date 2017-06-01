@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>No, You're Fake News</title>
+        <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="index.css"/>
+        <script src="index.js"></script>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <h1 style="text-align:center;color:#FFFFFF;">Fake News Central</h1>
+            <div class="row selections">
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <label for="left-wing-select" style="color:#FFFFFF;">Select left-wing news</label>
+                        <select class="form-control" id="left-wing-select">
+                            <option>Buzzfeed</option>
+                            <option>ABC News</option>
+                            <option>IGN</option>
+                            <option>The Huffington Post</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <label for="centrist-select" style="color:#FFFFFF;">Select centered news</label>
+                        <select class="form-control" id="centrist-select">
+                            <option>BBC News</option>
+                            <option>CNN</option>
+                            <option>CNBC</option>
+                            <option>The New York Times</option>
+                            <option>The Washington Post</option>
+                        </select>
+                    </div> 
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <label for="right-wing-select" style="color:#FFFFFF;">Select right-wing news</label>
+                        <select class="form-control" id="right-wing-select">
+                            <option>The Wall Street Journal</option>
+                            <option>Breitbart</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div style="text-align: center; padding:10px;">
+                <button type="submit" class="btn btn-primary" id="submit">Refresh News</button>
+            </div>
+            <div class="row news-stream">
+                <div class="col-sm-4 stream" id="left">
+                    <h1>Left-Wing Media</h1>
+                </div>
+                <div class="col-sm-4 stream" id="center">
+                    <h1>Centered Media</h1>
+                </div>
+                <div class="col-sm-4 stream" id="right">
+                    <h1>Right-Wing Media</h1>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+    
