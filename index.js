@@ -96,13 +96,13 @@ function getNews(apiKey, source, col)
             for(var i = 0; i < arr.length; i++)
             {
                 //Article block, has a specific ID based on the column and counter variable
-                $("#" + col).append('<div class="article" id="article' + col + i + '" style="border-bottom: 2px solid #e6ecf0; text-color:#8FB299;"></div>');
+                $("#" + col).append('<div class="article" id="article' + col + i + '" style="border-top: 2px solid #e6ecf0; text-color:#8FB299;"></div>');
                 /* All subsequent jQuery calls seek out the ID based on article + column + counter variable
                    Ex: #articleLeft0
                 */
                 //Image block
-                $("#article" + col + i).append('<img src="' + arr[i].urlToImage + '"style="max-width: 25%; max-height: 25%; float: left; padding: 2px">');
-                $("#article" + col + i).append('<div class="section" id="articleSection' + col + i + '" style=""margin-left: 25%;"> </div>');
+                $("#article" + col + i).append('<img src="' + arr[i].urlToImage + '"style="max-width: 25%; float: left; padding: 2px">');
+                $("#article" + col + i).append('<div class="section" id="articleSection' + col + i + '" style="width: 75%; margin-left: 25%; clear: left"> </div>');
                 //Article headline and link
                 $("#articleSection" + col + i).append('<a href="' + arr[i].url + '" style="color:#FFFFFF; width: 75%;">' + arr[i].title + '</a>');
                 //Publish time
